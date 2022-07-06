@@ -1,7 +1,5 @@
 String getBottles(int i) {
-  String n = i > 0 ? i.toString() : 'no more';
-  String s = i == 1 ? '' : 's';
-  return '$n bottle$s';
+  return '${i > 0 ? i.toString() : 'no more'} bottle${i == 1 ? '' : 's'}';
 }
 
 void main() {
